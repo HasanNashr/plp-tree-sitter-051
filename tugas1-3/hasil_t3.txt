@@ -1,0 +1,58 @@
+﻿=== 1. FUNGSI & JUMLAH PARAMETER ===
+@nama  baris 12: __init__ (jumlah parameter: 3)
+@nama  baris 17: tambah_tugas (jumlah parameter: 5)
+@nama  baris 33: hitung_rata_rata (jumlah parameter: 1)
+@nama  baris 48: konversi_huruf (jumlah parameter: 2)
+@nama  baris 63: filter_berdasarkan_matkul (jumlah parameter: 2)
+@nama  baris 71: simpan_ke_json (jumlah parameter: 2)
+@nama  baris 89: hitung_standar_deviasi (jumlah parameter: 1)
+@nama  baris 99: cetak_ringkasan (jumlah parameter: 1)
+@nama  baris 113: jalankan_simulasi (jumlah parameter: 0)
+
+=== 2. PEMANGGILAN PRINT ===
+@fn  baris 20: print
+@args  baris 20: (f"[PERINGATAN] Skor tidak valid untuk {judul}: {skor}")
+@fn  baris 31: print
+@args  baris 31: (f"Tugas '{judul}' berhasil ditambahkan.")
+@fn  baris 82: print
+@args  baris 82: (f"Data tersimpan di: {target.resolve()}")
+@fn  baris 85: print
+@args  baris 85: (f"Gagal menyimpan file: {err}")
+@fn  baris 106: print
+@args  baris 106: ("=== RINGKASAN AKADEMIK ===")
+@fn  baris 107: print
+@args  baris 107: (f"Mahasiswa : {pengelola.nama_mahasiswa} ({pengelola.nim})")
+@fn  baris 108: print
+@args  baris 108: (f"Total Item: {len(pengelola.daftar_tugas)}")
+@fn  baris 109: print
+@args  baris 109: (f"Rata-rata : {rata} (Grade: {grade})")
+@fn  baris 110: print
+@args  baris 110: (f"Std Dev   : {std_dev}")
+@fn  baris 123: print
+@args  baris 123: (f"Direktori aktif: {folder_kerja}")
+
+=== 3. IMPORT & FROM IMPORT ===
+@modul  baris 1: json
+@modul  baris 2: math
+@modul  baris 3: os
+@modul  baris 4: datetime
+@modul  baris 5: pathlib
+@modul  baris 6: typing
+
+=== 4. DOCSTRING FUNGSI (PENGAYAAN) ===
+@fungsi  baris 17: tambah_tugas
+@docstring  baris 18: """Menambahkan item tugas baru ke dalam daftar."""
+@fungsi  baris 33: hitung_rata_rata
+@docstring  baris 34: """Menghitung rata-rata tertimbang dari seluruh tugas."""
+@fungsi  baris 48: konversi_huruf
+@docstring  baris 49: """Mengonversi nilai angka menjadi indeks huruf."""
+@fungsi  baris 63: filter_berdasarkan_matkul
+@docstring  baris 64: """Mengambil daftar tugas berdasarkan nama mata kuliah tertentu."""
+@fungsi  baris 71: simpan_ke_json
+@docstring  baris 72: """Menyimpan seluruh data tugas ke berkas JSON."""
+@fungsi  baris 89: hitung_standar_deviasi
+@docstring  baris 90: """Menghitung standar deviasi populasi dari kumpulan nilai."""
+@fungsi  baris 99: cetak_ringkasan
+@docstring  baris 100: """Mencetak laporan ringkas ke konsol."""
+@fungsi  baris 113: jalankan_simulasi
+@docstring  baris 114: """Fungsi utama untuk menjalankan simulasi pengujian."""
