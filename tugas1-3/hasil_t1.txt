@@ -1,0 +1,38 @@
+=== 1. Fungsi ===
+Pohon S-expression:
+(module (function_definition name: (identifier) parameters: (parameters (identifier)) body: (block (return_statement (identifier)))))
+
+Anak langsung dari 'function_definition':
+  - 'def' -> anonim
+  - 'identifier' -> bernama
+  - 'parameters' -> bernama
+  - ':' -> anonim
+  - 'block' -> bernama
+Anak dari 'parameters':
+  - '(' -> anonim
+  - 'identifier' -> bernama
+  - ')' -> anonim
+
+=== 2. If-Else ===
+Pohon S-expression:
+(module (if_statement condition: (comparison_operator (identifier) (integer)) consequence: (block (expression_statement (assignment left: (identifier) right: (integer)))) alternative: (else_clause body: (block (expression_statement (assignment left: (identifier) right: (integer)))))))
+
+Anak langsung dari 'if_statement':
+  - 'if' -> anonim
+  - 'comparison_operator' -> bernama
+  - ':' -> anonim
+  - 'block' -> bernama
+  - 'else_clause' -> bernama
+
+=== 3. Kelas ===
+Pohon S-expression:
+(module (class_definition name: (identifier) body: (block (function_definition name: (identifier) parameters: (parameters (identifier)) body: (block (return_statement (identifier)))))))
+
+Anak langsung dari 'class_definition':
+  - 'class' -> anonim
+  - 'identifier' -> bernama
+  - ':' -> anonim
+  - 'block' -> bernama
+
+=== 4. Simulasi Syntax Error ===
+(module (ERROR (identifier) (parameters (identifier)) (identifier)))
